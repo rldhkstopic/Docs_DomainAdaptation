@@ -3,5 +3,5 @@
 **Adversarial discriminative domain adaptation (ADDA)**
 
 
-![flowchart](image.png)
-![network flow](image-1.png)
+![flowchart](imgs/image.png)
+![network flow](imgs/image-1.png)
