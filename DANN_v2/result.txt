@@ -1,0 +1,5 @@
+>> Load Encoder & Classifier Model
+>> Only-Source Domain Test Start
+Source Domain Accuracy: 99.93%
+>> Load Encoder & Classifier Model
+>> Domain-Adversarial Training Start
