@@ -3,3 +3,7 @@
 Source Domain Accuracy: 99.93%
 >> Load Encoder & Classifier Model
 >> Domain-Adversarial Training Start
+>> Domain-Adversarial Test Start
+> | Source Domain Accuracy: 99.73%
+> | Target Domain Accuracy: 23.20%
+> | Total Domain Accuracy: 61.46%
