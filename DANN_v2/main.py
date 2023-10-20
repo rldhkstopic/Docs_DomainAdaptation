@@ -1,17 +1,16 @@
 from domain import Network
-from dataset import (mnist_train_loader, 
-                    mnist_test_loader,
-                    mnistm_train_loader,
-                    mnistm_test_loader)
+from dataset import MNIST_loaders
+
+batch_size = 256
+num_workers = 4
 
 def main():
-    train_source, _ = mnist_train_loader, mnist_test_loader    
-    train_target, _ = mnistm_train_loader, mnistm_test_loader
+    source, target = MNIST_loaders(batch_size, num_workers, type='train')
     
-    network = Network(train_source, train_target)
-    
-    network._train_source()
-    network._train_dann()    
+    net = Network(source, target)
+    if not net._load_model():
+        net._train_source(epochs=10)
+    net._train_dann(epochs=100)   
 
 if __name__ == '__main__':
     main()
