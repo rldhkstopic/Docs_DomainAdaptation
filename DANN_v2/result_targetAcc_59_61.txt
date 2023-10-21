@@ -1,0 +1,137 @@
+>> Load Encoder & Classifier Model
+>> Only-Source Domain Test Start
+Source Domain Accuracy: 99.93%
+>> Load Encoder & Classifier Model
+>> Domain-Adversarial Training Start
+>> Epoch: 1/100 - Class Loss: 0.030378 - Domain Loss: 0.653026 - Total Loss: 0.683404
+>> Epoch: 2/100 - Class Loss: 0.027229 - Domain Loss: 1.011328 - Total Loss: 1.038557
+>> Epoch: 3/100 - Class Loss: 0.005664 - Domain Loss: 0.689646 - Total Loss: 0.695310
+>> Epoch: 4/100 - Class Loss: 0.161365 - Domain Loss: 0.676557 - Total Loss: 0.837923
+>> Epoch: 5/100 - Class Loss: 0.031364 - Domain Loss: 0.705470 - Total Loss: 0.736834
+>> Epoch: 6/100 - Class Loss: 0.112415 - Domain Loss: 0.643920 - Total Loss: 0.756335
+>> Epoch: 7/100 - Class Loss: 0.033005 - Domain Loss: 0.669482 - Total Loss: 0.702487
+>> Epoch: 8/100 - Class Loss: 0.020252 - Domain Loss: 0.699908 - Total Loss: 0.720159
+>> Epoch: 9/100 - Class Loss: 0.012030 - Domain Loss: 0.700993 - Total Loss: 0.713023
+>> Epoch: 10/100 - Class Loss: 0.031265 - Domain Loss: 0.688871 - Total Loss: 0.720136
+>> Domain-Adversarial Test Start
+> | Source Domain Accuracy: 99.12%
+> | Target Domain Accuracy: 44.76%
+> | Total Domain Accuracy: 71.94%
+>> Epoch: 11/100 - Class Loss: 0.014273 - Domain Loss: 0.692382 - Total Loss: 0.706654
+>> Epoch: 12/100 - Class Loss: 0.008378 - Domain Loss: 0.687498 - Total Loss: 0.695877
+>> Epoch: 13/100 - Class Loss: 0.013771 - Domain Loss: 0.704009 - Total Loss: 0.717780
+>> Epoch: 14/100 - Class Loss: 0.002286 - Domain Loss: 0.693572 - Total Loss: 0.695858
+>> Epoch: 15/100 - Class Loss: 0.066734 - Domain Loss: 0.701707 - Total Loss: 0.768440
+>> Epoch: 16/100 - Class Loss: 0.000577 - Domain Loss: 0.691757 - Total Loss: 0.692334
+>> Epoch: 17/100 - Class Loss: 0.010953 - Domain Loss: 0.676905 - Total Loss: 0.687858
+>> Epoch: 18/100 - Class Loss: 0.001882 - Domain Loss: 0.691493 - Total Loss: 0.693375
+>> Epoch: 19/100 - Class Loss: 0.001644 - Domain Loss: 0.691822 - Total Loss: 0.693465
+>> Epoch: 20/100 - Class Loss: 0.013364 - Domain Loss: 0.724706 - Total Loss: 0.738070
+>> Domain-Adversarial Test Start
+> | Source Domain Accuracy: 99.14%
+> | Target Domain Accuracy: 51.54%
+> | Total Domain Accuracy: 75.34%
+>> Epoch: 21/100 - Class Loss: 0.000759 - Domain Loss: 0.693678 - Total Loss: 0.694437
+>> Epoch: 22/100 - Class Loss: 0.000718 - Domain Loss: 0.694333 - Total Loss: 0.695051
+>> Epoch: 23/100 - Class Loss: 0.003784 - Domain Loss: 0.682332 - Total Loss: 0.686115
+>> Epoch: 24/100 - Class Loss: 0.003332 - Domain Loss: 0.641916 - Total Loss: 0.645247
+>> Epoch: 25/100 - Class Loss: 0.025747 - Domain Loss: 0.687085 - Total Loss: 0.712832
+>> Epoch: 26/100 - Class Loss: 0.003266 - Domain Loss: 0.688101 - Total Loss: 0.691367
+>> Epoch: 27/100 - Class Loss: 0.062481 - Domain Loss: 0.697657 - Total Loss: 0.760137
+>> Epoch: 28/100 - Class Loss: 0.037439 - Domain Loss: 0.687861 - Total Loss: 0.725300
+>> Epoch: 29/100 - Class Loss: 0.001719 - Domain Loss: 0.863601 - Total Loss: 0.865320
+>> Epoch: 30/100 - Class Loss: 0.231514 - Domain Loss: 0.688355 - Total Loss: 0.919869
+>> Domain-Adversarial Test Start
+> | Source Domain Accuracy: 98.31%
+> | Target Domain Accuracy: 48.90%
+> | Total Domain Accuracy: 73.60%
+>> Epoch: 31/100 - Class Loss: 0.105199 - Domain Loss: 0.686437 - Total Loss: 0.791636
+>> Epoch: 32/100 - Class Loss: 0.005548 - Domain Loss: 0.689814 - Total Loss: 0.695362
+>> Epoch: 33/100 - Class Loss: 0.003896 - Domain Loss: 0.691612 - Total Loss: 0.695508
+>> Epoch: 34/100 - Class Loss: 0.016906 - Domain Loss: 0.691101 - Total Loss: 0.708007
+>> Epoch: 35/100 - Class Loss: 0.052895 - Domain Loss: 0.699532 - Total Loss: 0.752427
+>> Epoch: 36/100 - Class Loss: 0.011592 - Domain Loss: 0.694812 - Total Loss: 0.706403
+>> Epoch: 37/100 - Class Loss: 0.000697 - Domain Loss: 0.691430 - Total Loss: 0.692127
+>> Epoch: 38/100 - Class Loss: 0.001141 - Domain Loss: 0.696651 - Total Loss: 0.697792
+>> Epoch: 39/100 - Class Loss: 0.001729 - Domain Loss: 0.692763 - Total Loss: 0.694492
+>> Epoch: 40/100 - Class Loss: 0.014943 - Domain Loss: 0.693246 - Total Loss: 0.708189
+>> Domain-Adversarial Test Start
+> | Source Domain Accuracy: 99.83%
+> | Target Domain Accuracy: 54.57%
+> | Total Domain Accuracy: 77.20%
+>> Epoch: 41/100 - Class Loss: 0.005258 - Domain Loss: 0.657580 - Total Loss: 0.662838
+>> Epoch: 42/100 - Class Loss: 0.000390 - Domain Loss: 0.696723 - Total Loss: 0.697113
+>> Epoch: 43/100 - Class Loss: 0.000307 - Domain Loss: 0.706678 - Total Loss: 0.706985
+>> Epoch: 44/100 - Class Loss: 0.009730 - Domain Loss: 0.693729 - Total Loss: 0.703459
+>> Epoch: 45/100 - Class Loss: 0.002251 - Domain Loss: 0.694037 - Total Loss: 0.696288
+>> Epoch: 46/100 - Class Loss: 0.005958 - Domain Loss: 0.695100 - Total Loss: 0.701058
+>> Epoch: 47/100 - Class Loss: 0.023848 - Domain Loss: 0.691434 - Total Loss: 0.715283
+>> Epoch: 48/100 - Class Loss: 0.000040 - Domain Loss: 0.691095 - Total Loss: 0.691135
+>> Epoch: 49/100 - Class Loss: 0.004710 - Domain Loss: 0.698675 - Total Loss: 0.703384
+>> Epoch: 50/100 - Class Loss: 0.000029 - Domain Loss: 0.693628 - Total Loss: 0.693657
+>> Domain-Adversarial Test Start
+> | Source Domain Accuracy: 99.89%
+> | Target Domain Accuracy: 59.71%
+> | Total Domain Accuracy: 79.80%
+>> Epoch: 51/100 - Class Loss: 0.000053 - Domain Loss: 0.696518 - Total Loss: 0.696571
+>> Epoch: 52/100 - Class Loss: 0.001915 - Domain Loss: 0.672837 - Total Loss: 0.674752
+>> Epoch: 53/100 - Class Loss: 0.777474 - Domain Loss: 0.752767 - Total Loss: 1.530241
+>> Epoch: 54/100 - Class Loss: 0.043605 - Domain Loss: 0.801257 - Total Loss: 0.844862
+>> Epoch: 55/100 - Class Loss: 0.019337 - Domain Loss: 0.474216 - Total Loss: 0.493553
+>> Epoch: 56/100 - Class Loss: 0.020131 - Domain Loss: 0.603566 - Total Loss: 0.623697
+>> Epoch: 57/100 - Class Loss: 0.000389 - Domain Loss: 0.703509 - Total Loss: 0.703898
+>> Epoch: 58/100 - Class Loss: 0.000034 - Domain Loss: 0.696870 - Total Loss: 0.696904
+>> Epoch: 59/100 - Class Loss: 0.009025 - Domain Loss: 0.698332 - Total Loss: 0.707356
+>> Epoch: 60/100 - Class Loss: 0.000019 - Domain Loss: 0.687658 - Total Loss: 0.687677
+>> Domain-Adversarial Test Start
+> | Source Domain Accuracy: 99.97%
+> | Target Domain Accuracy: 57.84%
+> | Total Domain Accuracy: 78.90%
+>> Epoch: 61/100 - Class Loss: 0.000422 - Domain Loss: 0.691390 - Total Loss: 0.691812
+>> Epoch: 62/100 - Class Loss: 0.000419 - Domain Loss: 0.701558 - Total Loss: 0.701977
+>> Epoch: 63/100 - Class Loss: 0.000065 - Domain Loss: 0.692271 - Total Loss: 0.692336
+>> Epoch: 64/100 - Class Loss: 0.000105 - Domain Loss: 0.698519 - Total Loss: 0.698624
+>> Epoch: 65/100 - Class Loss: 0.000161 - Domain Loss: 0.692769 - Total Loss: 0.692930
+>> Epoch: 66/100 - Class Loss: 0.000077 - Domain Loss: 0.696324 - Total Loss: 0.696402
+>> Epoch: 67/100 - Class Loss: 0.000043 - Domain Loss: 0.693393 - Total Loss: 0.693436
+>> Epoch: 68/100 - Class Loss: 0.000045 - Domain Loss: 0.696113 - Total Loss: 0.696158
+>> Epoch: 69/100 - Class Loss: 0.000048 - Domain Loss: 0.691005 - Total Loss: 0.691053
+>> Epoch: 70/100 - Class Loss: 0.000040 - Domain Loss: 0.694916 - Total Loss: 0.694956
+>> Domain-Adversarial Test Start
+> | Source Domain Accuracy: 99.99%
+> | Target Domain Accuracy: 59.38%
+> | Total Domain Accuracy: 79.69%
+>> Epoch: 71/100 - Class Loss: 0.000008 - Domain Loss: 0.692171 - Total Loss: 0.692178
+>> Epoch: 72/100 - Class Loss: 0.000817 - Domain Loss: 0.693139 - Total Loss: 0.693956
+>> Epoch: 73/100 - Class Loss: 0.007797 - Domain Loss: 0.692892 - Total Loss: 0.700689
+>> Epoch: 74/100 - Class Loss: 0.005409 - Domain Loss: 0.689127 - Total Loss: 0.694536
+>> Epoch: 75/100 - Class Loss: 0.019058 - Domain Loss: 0.643807 - Total Loss: 0.662866
+>> Epoch: 76/100 - Class Loss: 0.000055 - Domain Loss: 0.670534 - Total Loss: 0.670589
+>> Epoch: 77/100 - Class Loss: 0.000380 - Domain Loss: 0.686749 - Total Loss: 0.687129
+>> Epoch: 78/100 - Class Loss: 0.000039 - Domain Loss: 0.690149 - Total Loss: 0.690188
+>> Epoch: 79/100 - Class Loss: 0.000029 - Domain Loss: 0.694424 - Total Loss: 0.694453
+>> Epoch: 80/100 - Class Loss: 0.000053 - Domain Loss: 0.693390 - Total Loss: 0.693443
+>> Domain-Adversarial Test Start
+> | Source Domain Accuracy: 99.98%
+> | Target Domain Accuracy: 59.61%
+> | Total Domain Accuracy: 79.79%
+>> Epoch: 81/100 - Class Loss: 0.000492 - Domain Loss: 0.692435 - Total Loss: 0.692927
+>> Epoch: 82/100 - Class Loss: 0.000057 - Domain Loss: 0.690833 - Total Loss: 0.690890
+>> Epoch: 83/100 - Class Loss: 0.000009 - Domain Loss: 0.692312 - Total Loss: 0.692321
+>> Epoch: 84/100 - Class Loss: 0.010988 - Domain Loss: 0.690903 - Total Loss: 0.701891
+>> Epoch: 85/100 - Class Loss: 0.144610 - Domain Loss: 0.703558 - Total Loss: 0.848168
+>> Epoch: 86/100 - Class Loss: 0.000432 - Domain Loss: 0.630174 - Total Loss: 0.630606
+>> Epoch: 87/100 - Class Loss: 0.000022 - Domain Loss: 0.699935 - Total Loss: 0.699957
+>> Epoch: 88/100 - Class Loss: 0.000015 - Domain Loss: 0.691715 - Total Loss: 0.691730
+>> Epoch: 89/100 - Class Loss: 0.000036 - Domain Loss: 0.695511 - Total Loss: 0.695547
+>> Epoch: 90/100 - Class Loss: 0.000013 - Domain Loss: 0.692865 - Total Loss: 0.692878
+>> Domain-Adversarial Test Start
+> | Source Domain Accuracy: 99.98%
+> | Target Domain Accuracy: 58.68%
+> | Total Domain Accuracy: 79.33%
+>> Epoch: 91/100 - Class Loss: 0.000564 - Domain Loss: 0.693354 - Total Loss: 0.693919
+>> Epoch: 92/100 - Class Loss: 0.000057 - Domain Loss: 0.696041 - Total Loss: 0.696098
+>> Epoch: 93/100 - Class Loss: 0.002170 - Domain Loss: 0.691933 - Total Loss: 0.694102
+>> Epoch: 94/100 - Class Loss: 0.000014 - Domain Loss: 0.693123 - Total Loss: 0.693137
+>> Epoch: 95/100 - Class Loss: 0.000016 - Domain Loss: 0.694641 - Total Loss: 0.694656
+>> Epoch: 96/100 - Class Loss: 0.023346 - Domain Loss: 0.690022 - Total Loss: 0.713368

@@ -1,7 +1,7 @@
 from domain import Network
 from dataset import MNIST_loaders
 
-batch_size = 64
+batch_size = 128
 num_workers = 4
 
 def main():

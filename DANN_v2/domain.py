@@ -6,7 +6,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optims
 import torch.nn.functional as F
-from torch.nn import BCEWithLogitsLoss
+from torch.nn import BCEWithLogitsLoss, NLLLoss
 
 from tqdm import tqdm
 import torchvision.models as models
@@ -120,10 +120,10 @@ class Network():
         optim = optims.Adam(
             list(self.C.parameters()) + 
             list(self.E.parameters()) + 
-            list(self.D.parameters()), lr=0.001)
+            list(self.D.parameters()), lr=0.005)
         
         update_interval = 50
-        self.BCELoss = BCEWithLogitsLoss()
+        self.BCELoss = NLLLoss() # BCEWithLogitsLoss()
         print(">> Domain-Adversarial Training Start")
         for epoch in range(epochs):
             start_steps = epoch * len(self.dataset_source)
@@ -158,7 +158,7 @@ class Network():
                 domain_total_labels = torch.cat((domain_source_labels, domain_target_labels), 0)
                 domain_total_labels_onehot = F.one_hot(domain_total_labels, num_classes=2).float()
                 
-                domain_loss = self.BCELoss(domain_predicted, domain_total_labels_onehot)
+                domain_loss = self.BCELoss(domain_predicted, domain_total_labels)
                 
                 total_loss = cls_loss + domain_loss
                 total_loss.backward()
@@ -171,6 +171,7 @@ class Network():
                 if i % update_interval == 0 :
                     bar.set_description("Epoch: {}/{} - Class Loss: {:.6f} - Domain Loss: {:.6f} - Total Loss: {:.6f}".format(epoch+1, epochs, cls_loss.item(), domain_loss.item(), total_loss.item()), refresh=True)
 
+            print(f'>> Epoch: {epoch+1}/{epochs} - Class Loss: {cls_loss.item():.6f} - Domain Loss: {domain_loss.item():.6f} - Total Loss: {total_loss.item():.6f}')
             if (epoch + 1) % 10 == 0:
                 self._test_dann()
         
@@ -211,24 +212,27 @@ class Network():
         print(f'> | Source Domain Accuracy: {100 * correct_source / total_source:.2f}%')
         print(f'> | Target Domain Accuracy: {100 * correct_target / total_target:.2f}%')
         print(f'> | Total Domain Accuracy: {100 * (correct_source + correct_target) / (total_source + total_target):.2f}%')
-
+        
 class Discriminator(nn.Module):
     def __init__(self):
         super(Discriminator, self).__init__()
         self.discriminator = nn.Sequential(
                 nn.Linear(in_features=512, out_features=256),
-                nn.ReLU(),
-                nn.Dropout(0.5),  # optional, for regularization
+                nn.BatchNorm1d(256),  # added batch normalization
+                nn.LeakyReLU(0.2),  # using LeakyReLU
+                nn.Dropout(0.5),  
                 nn.Linear(in_features=256, out_features=100),
-                nn.ReLU(),
-                nn.Dropout(0.5),  # optional, for regularization
-                nn.Linear(in_features=100, out_features=2)
+                nn.BatchNorm1d(100),  # added batch normalization
+                nn.LeakyReLU(0.2),  # using LeakyReLU
+                nn.Dropout(0.5),  
+                nn.Linear(in_features=100, out_features=2),
+                nn.LogSoftmax(dim=1)  # changed to LogSoftmax
         )
     
     def forward(self, input_feature, alpha):
         reversed_input = ReverseLayerF.apply(input_feature, alpha)
         x = self.discriminator(reversed_input)
-        return F.softmax(x, dim=1)
+        return x  # removed F.softmax here because it's now included as LogSoftmax
 
 
 class ReverseLayerF(torch.autograd.Function):
