@@ -132,7 +132,7 @@ class Network():
             for i, (data_s, data_t) in bar:
                 source_data, source_labels = data_s
                 source_data = torch.cat((source_data, source_data, source_data), 1) # MNIST convert to 3 channel
-                target_data, target_labels = data_t
+                target_data, target_labels = data_t                                 # 
                 
                 p = float(i + start_steps) / total_steps
                 alpha = 2. / (1. + np.exp(-10 * p)) - 1

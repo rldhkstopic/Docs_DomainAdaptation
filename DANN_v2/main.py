@@ -1,11 +1,12 @@
 from domain import Network
-from dataset import MNIST_loaders
+from dataset import DataSet
 
 batch_size = 128
 num_workers = 4
 
 def main():
-    source, target = MNIST_loaders(batch_size, num_workers, type='train')
+    set = DataSet(source='mnist', target='svhn', batch_size=batch_size, num_workers=num_workers, type='train')
+    source, target = set.source_loader, set.target_loader
     
     net = Network(source, target)
     net._load_model()
